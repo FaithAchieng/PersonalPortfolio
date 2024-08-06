@@ -1,0 +1,42 @@
+.navigation {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  
+  .navigation a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  .navigation a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+body{
+    background-color: #D3D9D4;
+    font-family: Arial, sans-serif;
+}
+.image{
+    display: inline;
+    position: fixed; 
+    top: 40; 
+    right: 0;
+    padding: 10px; 
+    z-index: 1000; 
+
+}
+.image img{
+    width: 300px; 
+    height: auto; 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.image:hover img{
+    transform: scale(1.1); 
+    opacity: 0.8; 
+}
