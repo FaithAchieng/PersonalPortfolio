@@ -1,37 +1,29 @@
 .navigation {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
+  height: 100%; 
+  width: 160px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
   left: 0;
-  background-color: black;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 20px;
   }
   
   
   .navigation a {
-    padding: 8px 8px 8px 32px;
+    padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
-  display: block;
-  transition: 0.3s;
+  display: block
   }
   
   
   .navigation a:hover {
     color: white;
   }
-  .navigation .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
+  
   p{
     text-align: center;
   }
@@ -41,29 +33,110 @@
     .sidenav a {font-size: 18px;}
   }
 body{
-    background-image:url(Images/girl3.jpg);
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
+    background-color: black;
+}
+.img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.card{
   
-    font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px 0 white;
+  transition: 0.3s;
+  margin: 10px;
 }
-.image{
-    display: inline;
-    position: fixed; 
-    top: 40; 
-    right: 0;
-    padding: 10px; 
-    z-index: 1000; 
+.card:hover {
+  box-shadow: 0 8px 16px 0 white;
+}
+.container {
+  
+  padding: 2px 16px;
+}
+* {
+  box-sizing: border-box;
+}
 
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
 }
-.image img{
-    width: 300px; 
-    height: auto; 
-    transition: transform 0.3s ease, opacity 0.3s ease;
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
-.image:hover img{
-    transform: scale(1.1); 
-    opacity: 0.8; 
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }
